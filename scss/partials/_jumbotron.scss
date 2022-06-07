@@ -1,0 +1,78 @@
+@use 'mixin' as mix;
+
+.jumbotron-wrapper{
+    @include mix.container();
+    .jumbotron{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        height: 100%;
+        .left-jumbotron{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            p{
+                font-size: mix.$font-size-24;
+                padding: 30px 0;
+            }
+            h1{
+                font-size: 96px;
+                font-weight: bold;
+            }
+
+            .line{
+                @include mix.line(10px, 470px, mix.$blue)
+            }
+
+            button{
+                padding: 25px;
+                border:none;
+                background-color: mix.$blue;
+                border-radius: 20px;
+                font-size: mix.$font-size-24;
+                color: mix.$white;
+            }
+
+            .social-account{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .instagram{
+                    height: 80px;
+                }
+
+                .github{
+                    height: 39px;
+                }
+
+                .gmail{
+                    width:82px;
+                    height: 46px;
+                }
+
+                img{
+                    margin-right:10px;
+                }
+
+                img:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right-jumbotron{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../images/beside-image-decoration.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: bottom;
+            img{
+                height: 700px;
+                
+            }
+        }
+    }
+}

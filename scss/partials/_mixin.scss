@@ -1,0 +1,23 @@
+$blue: #396EB0;
+$white: #FFFFFF;
+$lightbrown: #FC997C;
+$darkblue: #2E4C6D;
+$font-size-24: 24px;
+
+@mixin container {
+    width:100%;
+    height: 100%;
+    max-width: 1170px;
+    margin:0 auto;
+}
+
+@mixin line($height, $width, $background-color){
+    height: $height;
+    width: $width;
+    background-color: $background-color;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}

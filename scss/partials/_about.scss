@@ -1,0 +1,59 @@
+@use 'mixin' as mix;
+
+.about-wrapper{
+    @include mix.container();
+    .about{
+        margin-top:400px;
+        display: grid;
+        grid-template-columns: 0.75fr 2.25fr;
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                border-radius: 50px;
+                height:400px;
+            }
+        }
+        .about-desc{
+            padding:50px;
+            h2{
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .line{
+                @include mix.line(8px, 313px, mix.$blue);
+                margin: 10px 0 20px 0;
+            }
+            
+            p{
+                font-size: mix.$font-size-24;
+                letter-spacing: 1px;
+                line-height: 30px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .skills{
+        margin-top: 50px;
+        h2{
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .line{
+            @include mix.line(8px, 94px, mix.$blue);
+        }
+
+        .skills-logos{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            row-gap:50px;
+            img{
+                margin-right:75px;
+            }
+        }
+    }
+}
