@@ -67,7 +67,7 @@
   font-family: Inter;
 }
 .content .left-decoration {
-  background-image: url(../../../images/left-decoration.svg);
+  background-image: url(/images/left-decoration.svg);
   position: absolute;
   z-index: -1;
   top: 45%;
@@ -77,7 +77,7 @@
   background-repeat: no-repeat;
 }
 .content .right-decoration {
-  background-image: url(../../../images/right-decoration.svg);
+  background-image: url(/images/right-decoration.svg);
   position: absolute;
   z-index: -1;
   top: 125%;
