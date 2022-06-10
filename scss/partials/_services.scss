@@ -1,0 +1,32 @@
+@use 'mixin' as mix;
+
+.services{
+    margin-top:100px;
+    &-wrapper{
+        @include mix.container();
+        .services-desc{
+            @include mix.desc(mix.$black, 352px, mix.$blue, mix.$black);
+        }
+
+        .provides-work{
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+
+            .work-item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                font-weight: bold;
+                h3{
+                    font-size: 30px;
+                }
+                
+                img{
+                    height:165px;
+                }
+            }
+
+        }
+    }
+}

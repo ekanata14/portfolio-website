@@ -16,23 +16,7 @@
             }
         }
         .about-desc{
-            padding:50px;
-            h2{
-                font-size: 50px;
-                font-weight: bold;
-            }
-
-            .line{
-                @include mix.line(8px, 313px, mix.$blue);
-                margin: 10px 0 20px 0;
-            }
-            
-            p{
-                font-size: mix.$font-size-24;
-                letter-spacing: 1px;
-                line-height: 30px;
-                margin-bottom: 25px;
-            }
+            @include mix.desc(mix.$black, 313px, mix.$blue, mix.$black);
         }
     }
 
